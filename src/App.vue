@@ -1,9 +1,9 @@
 <template>
   <div id="top">
-  <div  id="table5">
-<Echarts5></Echarts5>
-  </div>
-   
+    <div id="table5">
+      <Echarts5></Echarts5>
+    </div>
+
   </div>
   <div id="mapDiv">
     <Earth></Earth>
@@ -16,32 +16,37 @@
     </div>
   </div>
   <div>
-<img src="../图表装饰.png" id="tableTop1">
+    <img src="../图表装饰.png" id="tableTop1">
     <div class="table" id="table1">
       <Echarts1>
       </Echarts1>
     </div>
   </div>
   <div>
+    <img src="../图表装饰.png" id="tableTop2">
     <div class="table" id="table2">
       <Echarts2>
       </Echarts2>
     </div>
   </div>
   <div>
+    <img src="../图表装饰.png" id="tableTop3">
     <div class="table" id="table3">
       <Echarts3>
       </Echarts3>
     </div>
   </div>
   <div>
+    <img src="../图表装饰.png" id="tableTop4">
     <div class="table" id="table4">
       <Echarts4>
       </Echarts4>
     </div>
   </div>
 
-
+  <div>
+    <Excel1></Excel1>
+  </div>
 </template>
 
 <script>
@@ -55,6 +60,7 @@ import Echarts2 from './components/vue-table-component-Echarts2.vue'
 import Echarts3 from './components/vue-table-component-Echarts3.vue'
 import Echarts4 from './components/vue-table-component-Echarts4.vue'
 import Echarts5 from './components/vue-table-component-Echarts5.vue'
+import Excel1 from './components/vue-table-component-Excel.vue'
 import { inject } from "vue"
 
 export default {
@@ -73,12 +79,14 @@ export default {
     Echarts2,
     Echarts3,
     Echarts5,
-    Echarts4
+    Echarts4,
+    Excel1,
   }
 }
 </script>
 
 <style>
+/*一共24rem */
 html,
 body {
   margin: 0;
@@ -111,7 +119,7 @@ body {
   margin: 0;
   position: absolute;
   width: 100%;
- /* display: none; */
+  /* display: none; */
   z-index: -1;
 }
 
@@ -136,17 +144,45 @@ body {
   top: 6rem;
   z-index: 3;
 }
+
 #table5 {
   z-index: 30;
 }
+
 
 #timeVue {
   float: right;
 }
 
-#tableTop1{
+#tableTop1 {
   position: absolute;
-  top:1.65rem;
+  top: 1.65rem;
+  width: 6rem;
+  height: 0.5rem;
+  z-index: 1;
+}
+
+#tableTop2 {
+  position: absolute;
+  top: 1.65rem;
+  right: 0;
+  width: 6rem;
+  height: 0.5rem;
+  z-index: 1;
+}
+
+#tableTop3 {
+  position: absolute;
+  top: 6rem;
+  width: 6rem;
+  height: 0.5rem;
+  z-index: 1;
+}
+
+#tableTop4 {
+  position: absolute;
+  top: 6rem;
+  right: 0;
   width: 6rem;
   height: 0.5rem;
   z-index: 1;
@@ -159,6 +195,7 @@ body {
   width: 6rem;
   height: 4rem;
   border: 1px solid seashell;
+  background-color: rgba(255, 255, 255, 0.2);
 
 }
 </style>

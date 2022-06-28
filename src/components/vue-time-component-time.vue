@@ -1,17 +1,19 @@
 <template>
-<div id="time">
-{{time}}
-</div>
+  <div id="time">
+    {{ time }}
+  </div>
 
-  
+
 </template>
 
 <script>
 export default {
+
   data() {
     return {
       time: ""
     };
+
   },
   mounted() {
     this.currentTime();
@@ -44,8 +46,8 @@ export default {
 
 
 <style>
-#time{
-  font-size:0.25rem;
-  color: white;
+#time {
+  font-size: 0.25rem;
+  color: rgb(255, 255, 255);
 }
 </style>

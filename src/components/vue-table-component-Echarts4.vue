@@ -14,39 +14,39 @@ export default {
       let myChart = $echarts.init(document.getElementById("chart4"))
       myChart.setOption({
         title: {
-    text: '郑州市气温',
-    left: 'center',
-    textStyle:{
-      color: '#ccc'
-    }
-  },
-         series: [
-    {
-      type: 'gauge',
-      progress: {
-        show: true
-      },
-       pointer: {
-        itemStyle: {
-          color: '#37a2da'
-        }
-      },
-      axisLabel: {
-        color: '#37a2da',
-       
-      },
-      detail: {
-        valueAnimation: true,
-        formatter: '{value}',
-        color:'#37a2da'
-      },
-      data: [
-        {
-          value: 39,
-        }
-      ]
-    }
-  ]
+          text: '郑州市气温',
+          left: 'center',
+          textStyle: {
+            color: '#ccc'
+          }
+        },
+        series: [
+          {
+            type: 'gauge',
+            progress: {
+              show: true
+            },
+            pointer: {
+              itemStyle: {
+                color: '#FF0000'
+              }
+            },
+            axisLabel: {
+              color: '#F29000',
+
+            },
+            detail: {
+              valueAnimation: true,
+              formatter: '{value}',
+              color: '#FF3333'
+            },
+            data: [
+              {
+                value: 39,
+              }
+            ]
+          }
+        ]
       })
     })
     return {}

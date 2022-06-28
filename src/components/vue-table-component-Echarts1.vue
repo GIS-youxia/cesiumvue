@@ -27,7 +27,12 @@ export default {
         },
         yAxis: {
           type: "value",
-
+          0: {
+          },
+          nameTextStyle: {
+            color: '#000000',
+            fontsize: 20
+          }
         },
         series: {
 
