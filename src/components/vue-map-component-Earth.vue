@@ -33,11 +33,16 @@ export default {
       sceneMode: Cesium.SceneMode.SCENE3D,
      
     })
+            viewer.dataSources.add(
+            Cesium.GeoJsonDataSource.load(
+                "../CHN_adm0.json"
+            )
+        )
      viewer.camera.setView({
              destination:Cesium.Cartesian3.fromDegrees(113.34,34.33,4000000),
              orientation:{
                  heading:Cesium.Math.toRadians(0),
-                 pitch:Cesium.Math.toRadians(-60),
+                 pitch:Cesium.Math.toRadians(-90),
                  roll:0,
               
              }
